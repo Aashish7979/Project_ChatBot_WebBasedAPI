@@ -1,0 +1,99 @@
+{"intents": [
+
+                  {"tag": "greeting",
+                   "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+                   "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+                   "context": [""]
+                   },
+                 {"tag": "goodbye",
+                  "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+                  "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+                  "context": [""]
+                  },
+                 {"tag": "thanks",
+                  "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                  "responses": ["Happy to help!", "Any time!", "My pleasure"],
+                  "context": [""]
+                   },
+                  {
+                    "tag": "Restaurant",
+                    "patterns": ["A2B", "KFC", "Mcdonalds", "Dominos", "Pizza Hut", "Dindigul Thalappakatti"],
+                    "response": ["Sure"],
+		    "context": [""]
+                   },
+                  {
+                    "tag": "Order",
+                    "patterns": ["I like to order", "I like to have food", "Let me order", "What is special today in your menu", "I lik to order pizza", "Order"],
+                    "response": ["Sure! Let me help you with menu.", "What you like to eat today?", "What would you like to order?"],
+		    "context": [""]
+                   },
+                  {
+                    "tag": "Delivery Criteria",
+                    "patterns": ["Fastest delivery","Ordinary delivery"],
+                    "response": ["within 30min"],
+		    "context": [""]
+                  }, 
+                  {
+                    "tag": "menu",
+                    "patterns": ["menu", "varities of cuisine?", "restro has how many different varities of cuisine", "what are the different types of the cuisine"],
+                    "responses": ["Restro has all major varities of cuisine. American, Indian, Thai, Chinese, Japanese, French, Greek, Mexican, Taiwan, Italian."],
+		    "context": [""]
+                  },
+                  {
+                    "tag": "reviews",
+                    "patterns": ["what are the reviews of Restro?", "why choose your Restro"],
+                    "responses": ["Our Restro is 5-star restro and we have average 4.7 ratings out of 5, You can also check our google reviews"],
+		    "context": [""]
+                  },
+                  {
+                    "tag": "noanswer",
+	                "patterns": ["none"],
+	                "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+		   	"context": [""]
+                  },
+                  {
+                    "tag": "options",
+                    "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+                    "responses": ["I can help you with your order status, delivery, and refund. ", "I can check your order status, and cancel your order."],
+		    "context": [""]
+                   },
+                  {
+                    "tag": "order-status-request",
+	                "patterns": ["Please check my order status.", "I am not able to check my order status.", "Help me with my order status", "Order Status", "Where is my order?", "Where is my food", "Track my order", "Track my food"],
+	                "responses": ["I am checking your status of your order, Please wait.", "I am checking up with for your order","Sure! I can help you in tracking your order, Please wait."],
+			"context": [""]
+                  },
+                  {
+                    "tag": "cancel-request",
+	                "patterns": ["Hi, I want to cancel my order.", "I want to cancel my order", "Please cancel my order", "Cancel my order"],
+	                "responses": ["I can cancel your order, If your order is in kitchen, there will be a cancellation fee.  Do you want me to proceed?", "I can cancel your order], there can be a cancellation fee depending on your order status. I need your final confirmation to confirm your order."],
+                        "context": [""]
+                  },
+                  {
+                    "tag": "cancel-order",
+                    "patterns": [],
+                    "responses": ["I have canceled your order, the order refund will reflect in your account in 2 days. Do you need any more help?","Your order is canceled, you will receive refund for this order in 2 days. Is there anything else, we can help you with?"],
+		    "context": [""]
+                  },
+                 {
+                    "tag": "no-cancel-order",
+                    "patterns": [],
+                    "responses": ["Okay, I am not canceling your order. Do you need any more help?","Alright, I am not canceling your order. Is there anything else, we can help you with?"],
+		    "context": [""]
+                 },
+                 {
+                    "tag": "thanks",
+	            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                    "responses": ["Happy to help!", "Any time!", "My pleasure"],
+		    "context": [""]
+                  },
+                 {
+                     "tag": "queries & feedback",
+                     "patterns": ["feedback", "i have a feedback", "Query"],
+                     "responses": ["Sure, I'll be happy to take your request or feedback."],
+		     "context": [""]
+                 }
+
+
+          ]
+}
